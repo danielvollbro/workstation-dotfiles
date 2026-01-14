@@ -1,0 +1,8 @@
+
+{{ if ne .chezmoi.hostname "ws-h" }}
+setup_headless.sh
+{{ end }}
+
+{{ if ne .chezmoi.hostname "ws-d" }}
+setup_desktop.sh
+{{ end }}
